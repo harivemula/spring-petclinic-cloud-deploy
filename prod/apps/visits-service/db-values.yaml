@@ -23,3 +23,5 @@ db:
   ## ref: https://github.com/bitnami/bitnami-docker-mysql#creating-a-database-on-first-run
   ##
   name: service_instance_db
+serviceAccount:
+  create: false
