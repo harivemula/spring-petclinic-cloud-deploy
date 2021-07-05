@@ -1,8 +1,9 @@
-clusterDomain: cluster.local
-architecture: standalone
-auth:
-  rootPassword: Password01
-  database: service_instance_db
-  username: admin
-  password: Password01
-  replicationPassword: Password01
+mysql:
+  clusterDomain: cluster.local
+  architecture: standalone
+  auth:
+    rootPassword: Password01
+    database: service_instance_db
+    username: admin
+    password: Password01
+    replicationPassword: Password01
