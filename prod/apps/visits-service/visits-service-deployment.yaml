@@ -18,7 +18,7 @@ spec:
         app: visits-service
     spec:
       containers:
-      - image: harivemula/visits-service:latest
+      - image: harivemula/visits-service:1.0.0
         name: visits-service
         imagePullPolicy: Always
         livenessProbe:
