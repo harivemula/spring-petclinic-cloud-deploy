@@ -2,18 +2,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: spring-petclinic
+  name: vets-service
 spec:
   destination:
     name: ""
     namespace: spring-petclinic
     server: "https://kubernetes.default.svc"
   source:
-    path: services-prod
+    path: prod/apps/vets-service
     repoURL: "https://github.com/harivemula/spring-petclinic-cloud-deploy.git"
     targetRevision: HEAD
     directory:
-      recurse: true
-      jsonnet:
-        tlas: []
+      recurse: false
   project: spring-petclinic
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
