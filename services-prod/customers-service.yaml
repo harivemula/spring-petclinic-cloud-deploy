@@ -6,15 +6,12 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    name: ""
     namespace: spring-petclinic
     server: "https://kubernetes.default.svc"
   source:
     path: prod/apps/customers-service
     repoURL: "https://github.com/harivemula/spring-petclinic-cloud-deploy.git"
     targetRevision: HEAD
-    directory:
-      recurse: false
   project: spring-petclinic
   syncPolicy:
     automated:
