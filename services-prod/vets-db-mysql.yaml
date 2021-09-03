@@ -8,7 +8,7 @@ spec:
     namespace: spring-petclinic
     server: "https://kubernetes.default.svc"
   source:
-    path: prod/apps/vets-service
+    path: prod/apps/vets-service/db
     repoURL: "https://github.com/harivemula/spring-petclinic-cloud-deploy.git"
     targetRevision: HEAD
     helm:
